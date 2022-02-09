@@ -18,7 +18,7 @@ body {
 
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap-reverse;
 }
 
 /* @media (max-width: 720px) {

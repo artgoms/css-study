@@ -23,7 +23,17 @@ Quebra a linha assim que um dos flex items não puder ser mais compactado.
 / flex-wrap: wrap-reverse;
 Quebra a linha assim que um dos flex items não puder manter compactado. A quebra é na direção contrária, ou seja, para a linha acima.
 
-flex-flow
+// flex-flow
+É um atalho para as propriedades flex-direction e flex-wrap. Você não verá muito o seu uso, pois geralmente quando mudamos o flex-direction para column, mantemos o padrão do flex-wrap que é nowrap.
+
+/flex-flow: row nowrap;
+Coloca o conteúdo em linha e não permite a quebra de linha.
+
+/flex-flow: row wrap;
+Coloca o conteúdo em linha e permite a quebra de linha.
+
+/flex-flow: column nowrap;
+Coloca o conteúdo em coluna e não permite a quebra de linha.
 
 justify-content
 
