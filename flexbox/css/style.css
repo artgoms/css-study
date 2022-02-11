@@ -59,12 +59,7 @@ header {
   padding: 8px 16px;
   text-decoration: none;
 
-  color: #222;
-  transition: 0.5s ease;
-}
-
-.nav-link:hover {
-  opacity: 0.8;
+  color: white;
 }
 
 .container {
@@ -73,16 +68,21 @@ header {
 
   padding: 8px 16px;
 
-  border: 1px solid red;
-
   display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 960px) {
+  .container {
+    flex-direction: column;
+  }
 }
 
 .container-item-1 {
-  background-color: #222;
-  flex: 6 1 auto;
+  flex: 6 1 600px;
 
   margin-right: 8px;
+  padding: 16px 0px;
   display: flex;
   flex-direction: column;
 }
@@ -95,9 +95,9 @@ header {
 }
 
 .container-item-2 {
-  flex: 1 1 auto;
+  flex: 1 1 200px;
   margin-left: 8px;
-  background-color: #777;
+  padding: 16px 0px;
 }
 
 h3 {
@@ -109,4 +109,26 @@ h3 {
 
 p {
   color: #777;
+}
+
+.video-side {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.thumb {
+  max-width: 150px;
+  width: 150px;
+  height: 120px;
+  margin-right: 8px;
+
+  border-radius: 10px;
+  background-color: #ccc;
+
+  flex: 1 1 auto;
+}
+
+.description {
+  flex: 0 1 auto;
+  margin-left: 8px;
 }
