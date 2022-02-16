@@ -136,15 +136,13 @@ h1 {
 
 ### @if & @else e Operadores
 
-Podemos usar padrões no código, declarando somente uma vez e utilizando o @include.
+Podemos utilizar o @if & @else junto com @mixins, como exemplo na aplicação na responsividade.
 
 1. Criação de estruturas encadeadas
 2. Dá mais elasticidade aos @mixins
 3. Capacidade de criar cenários diferentes de estilização
 
 exemplo:
-
-@mixin nome_mixin($cor: #FAFAFA){ 
 
 	@if $layout == light {
 	 	$bg-color: #EFEFEF;
