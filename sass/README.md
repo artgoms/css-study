@@ -81,18 +81,18 @@ $box-shadow: blue;
 
 exemplo:
 
-ul {
+`ul {`
 
-​	li {
+​	`li {`
 
-​		list-style: none;
+​		`list-style: none;`
 
-​		a {
+​		`a {`
 
-​		text-decoration: none;		
+​		`text-decoration: none;`		
 
-​		}
+​		`}`
 
-​	}	
+​	`}`	
 
-}
+`}`
