@@ -1,0 +1,78 @@
+@import '_colors.scss';
+@import '_shadows.scss';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+
+  background-color: $preto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+}
+
+h1 {
+  color: $branco;
+
+  span {
+    color: $cinza;
+  }
+}
+
+.link {
+  display: inline-block;
+  text-decoration: none;
+  color: $branco;
+  font-size: 24px;
+
+  background-color: $roxo;
+
+  padding: 12px 124px;
+  border-radius: 8px;
+  margin-top: 24px;
+
+  transition: 0.5s ease;
+
+  &:hover {
+    box-shadow: $box-shadow-purple;
+  }
+}
+
+.list {
+  margin-top: 16px;
+  padding: 16px;
+  border: 1px solid red;
+
+  li {
+    padding: 8px;
+    list-style: none;
+    border: 1px solid blue;
+
+    a {
+      text-decoration: none;
+      color: $branco;
+
+      &:hover {
+        color: pink;
+      }
+    }
+  }
+}
+
+p {
+  color: $cinza;
+
+  border: {
+    style: solid;
+    color: purple;
+  }
+}
