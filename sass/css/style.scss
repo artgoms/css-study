@@ -1,16 +1,29 @@
 @import '_colors.scss';
 @import '_shadows.scss';
 
-@mixin responsive-tablet {
-  @media screen and (max-width: 960px) {
-    @content;
-  }
-}
+// @mixin responsive-tablet {
+//   @media screen and (max-width: 960px) {
+//     @content;
+//   }
+// }
 
-@mixin responsive-mobile {
-  @media screen and (max-width: 720px) {
-    @content;
-  }
+// @mixin responsive-mobile {
+//   @media screen and (max-width: 720px) {
+//     @content;
+//   }
+// }
+
+$layout: dark;
+
+$bg-color: #efefef;
+$text-color: #101010;
+
+@if $layout == light {
+  $bg-color: #efefef;
+  $text-color: #101010;
+} @else if $layout == dark {
+  $bg-color: #101010;
+  $text-color: #efefef;
 }
 
 * {
@@ -23,7 +36,7 @@ body {
   width: 100%;
   height: 100vh;
 
-  background-color: $preto;
+  background-color: $bg-color;
 
   display: flex;
   justify-content: center;
@@ -33,40 +46,40 @@ body {
 }
 
 h1 {
-  color: $branco;
+  color: $text-color;
   font-size: 72px;
 
-  @include responsive-tablet() {
-    font-size: 48px;
-  }
-  @include responsive-mobile() {
-    font-size: 12px;
-  }
+  // @include responsive-tablet() {
+  //   font-size: 48px;
+  // }
+  // @include responsive-mobile() {
+  //   font-size: 12px;
+  // }
   span {
     color: $cinza;
   }
 }
 
-.link {
-  display: inline-block;
-  text-decoration: none;
-  color: $branco;
-  font-size: 24px;
+// .link {
+//   display: inline-block;
+//   text-decoration: none;
+//   color: $branco;
+//   font-size: 24px;
 
-  background-color: $roxo;
+//   background-color: $roxo;
 
-  padding: 12px 124px;
-  border-radius: 8px;
-  margin-top: 24px;
+//   padding: 12px 124px;
+//   border-radius: 8px;
+//   margin-top: 24px;
 
-  transition: 0.5s ease;
+//   transition: 0.5s ease;
 
-  &:hover {
-    box-shadow: $box-shadow-purple;
-  }
-}
+//   &:hover {
+//     box-shadow: $box-shadow-purple;
+//   }
+// }
 
 p {
-  color: $cinza;
+  color: $text-color;
   font-size: 24px;
 }

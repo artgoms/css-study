@@ -40,6 +40,7 @@ Já o SCSS nos deixa numa sintaxe perto do padrão do CSS, não condicionando ao
 
 exemplo:
 
+```scss
 @import "colors.scss"
 
 @import "typography.scss"
@@ -49,6 +50,7 @@ Partials
 @import "_layout.scss"
 
 @import "_buttons.scss"
+```
 
 
 
@@ -60,6 +62,7 @@ Partials
 
 exemplo:
 
+```scss
 $preto: #000;
 
 $branco: #FFF;
@@ -69,6 +72,7 @@ $gray1: #111;
 $gray2: #555;
 
 $box-shadow: blue;
+```
 
 
 
@@ -103,6 +107,8 @@ ul {
 
 ### @mixin & @content
 
+Podemos usar padrões no código, declarando somente uma vez e utilizando o @include.
+
 1. Criação de funções pré-definidas
 2. Aproveitamento de código
 3. Criação de sistemas mais completos
@@ -127,4 +133,26 @@ h1 {
 	}
 }
 ```
+
+### @if & @else e Operadores
+
+Podemos usar padrões no código, declarando somente uma vez e utilizando o @include.
+
+1. Criação de estruturas encadeadas
+2. Dá mais elasticidade aos @mixins
+3. Capacidade de criar cenários diferentes de estilização
+
+exemplo:
+
+@mixin nome_mixin($cor: #FAFAFA){ 
+
+	@if $layout == light {
+	 	$bg-color: #EFEFEF;
+	 	$text-color: #101010;
+	}
+	
+	@else if $layout == dark {
+		$bg-color: #101010;
+		$text-color: #EFEFEF;
+	}
 
