@@ -26,6 +26,19 @@ body {
 
 h1 {
   color: #fff;
+  font-size: 72px;
+}
+
+@media screen and (max-width: 960px) {
+  h1 {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  h1 {
+    font-size: 12px;
+  }
 }
 
 h1 span {
@@ -50,30 +63,8 @@ h1 span {
           box-shadow: 0px 4px 60px rgba(169, 80, 196, 0.14), 0px 12.9632px 18.0882px rgba(169, 80, 196, 0.0912224), 0px 5.38427px 7.51293px rgba(169, 80, 196, 0.07), 0px 1.94738px 2.71728px rgba(169, 80, 196, 0.0487776);
 }
 
-.list {
-  margin-top: 16px;
-  padding: 16px;
-  border: 1px solid red;
-}
-
-.list li {
-  padding: 8px;
-  list-style: none;
-  border: 1px solid blue;
-}
-
-.list li a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.list li a:hover {
-  color: pink;
-}
-
 p {
   color: #555;
-  border-style: solid;
-  border-color: purple;
+  font-size: 24px;
 }
 /*# sourceMappingURL=style.css.map */

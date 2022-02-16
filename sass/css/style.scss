@@ -1,6 +1,18 @@
 @import '_colors.scss';
 @import '_shadows.scss';
 
+@mixin responsive-tablet {
+  @media screen and (max-width: 960px) {
+    @content;
+  }
+}
+
+@mixin responsive-mobile {
+  @media screen and (max-width: 720px) {
+    @content;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -22,7 +34,14 @@ body {
 
 h1 {
   color: $branco;
+  font-size: 72px;
 
+  @include responsive-tablet() {
+    font-size: 48px;
+  }
+  @include responsive-mobile() {
+    font-size: 12px;
+  }
   span {
     color: $cinza;
   }
@@ -47,32 +66,7 @@ h1 {
   }
 }
 
-.list {
-  margin-top: 16px;
-  padding: 16px;
-  border: 1px solid red;
-
-  li {
-    padding: 8px;
-    list-style: none;
-    border: 1px solid blue;
-
-    a {
-      text-decoration: none;
-      color: $branco;
-
-      &:hover {
-        color: pink;
-      }
-    }
-  }
-}
-
 p {
   color: $cinza;
-
-  border: {
-    style: solid;
-    color: purple;
-  }
+  font-size: 24px;
 }

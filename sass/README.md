@@ -81,18 +81,50 @@ $box-shadow: blue;
 
 exemplo:
 
-`ul {`
+```scss
+ul {
 
-​	`li {`
+​	li {
 
-​		`list-style: none;`
+​		list-style: none;
 
-​		`a {`
+​		a {
 
-​		`text-decoration: none;`		
+​		text-decoration: none;		
 
-​		`}`
+​		}
 
-​	`}`	
+​	}	
 
-`}`
+}
+```
+
+
+
+### @mixin & @content
+
+1. Criação de funções pré-definidas
+2. Aproveitamento de código
+3. Criação de sistemas mais completos
+4. Facilidade para adicionar prefixos
+5. Facilita na criação de função de responsividade.
+
+exemplo:
+
+```
+@mixin nome_mixin($cor: #FAFAFA){ 
+
+​	font-size: 36px;
+
+​	color: $cor;
+
+​	@content;
+
+}
+h1 {
+	@include nome_mixin(#FFF) {
+		line-height: 110%;
+	}
+}
+```
+
