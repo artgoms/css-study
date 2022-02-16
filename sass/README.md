@@ -77,18 +77,22 @@ $box-shadow: blue;
 1. Criação de efeitos cascata do CSS com mais facilidade
 2. Pode emendar n cascatas
 3. Facilita na identificação de qual elemento está estilizando
+3. Nesting de tags e propriedades
 
 exemplo:
 
-$preto: #000;
+ul {
 
-$branco: #FFF;
+​	li {
 
-$gray1: #111;
+​		list-style: none;
 
-$gray2: #555;
+​		a {
 
-$box-shadow: blue;
+​		text-decoration: none;		
 
+​		}
 
+​	}	
 
+}
