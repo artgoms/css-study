@@ -154,3 +154,31 @@ exemplo:
 		$text-color: #EFEFEF;
 	}
 
+### Estruturas de Repetição: @for, @while e @each
+
+Sequências de códigos que estabelece como um loop deve se repetir ~ basicamente.
+
+1. Criação de estruturas de repetição
+2. Dá mais possibilidades aos @mixins & @functions
+
+exemplo:
+
+```scss
+@for $i from 1 through 12 {
+	.grid-#{$i} {
+		width: 72px * $i
+	}
+}
+.grid-1 {
+    width: 72px;
+}
+
+.grid-2 {
+    width: 144px;
+}
+```
+
+@for => você estabelece um vetor, ele já vai rodar automaticamente dentro do parametro.
+
+@while => consegue colocar algumas comparações, diferente do @for
+
