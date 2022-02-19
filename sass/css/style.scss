@@ -35,6 +35,14 @@ $text-color: #101010;
   }
 }
 
+@function grid($col, $total: 12) {
+  @return ($col / $total) * 100%;
+}
+
+div {
+  width: grid(5);
+}
+
 * {
   padding: 0;
   margin: 0;

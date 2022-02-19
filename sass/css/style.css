@@ -46,6 +46,10 @@
   width: 1152px;
 }
 
+div {
+  width: 41.66667%;
+}
+
 * {
   padding: 0;
   margin: 0;

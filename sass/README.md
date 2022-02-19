@@ -182,3 +182,28 @@ exemplo:
 
 @while => consegue colocar algumas comparações, diferente do @for
 
+
+
+### @function & @return
+
+1. Criação de estruturas para reaproveitar códigos
+2. Um bloco de código que retorna um valor.
+
+exemplo:
+
+```
+@function grid($col, $total:12) {
+	@return ($col/$total) * 100%;
+}
+
+grid(3);
+
+.grid-3{
+	width: 25%;
+}
+
+darken(#5fe36a, 50%)
+transparentize(#5fe36a, 0.7)
+lighten(#5fe36a, 20%)
+```
+
